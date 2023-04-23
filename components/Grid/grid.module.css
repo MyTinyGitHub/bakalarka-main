@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+  grid-gap: 0px;
+
+  grid-template-columns: repeat(var(--grid-size), minmax(32px, 1fr));
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+
+  float: "right";
+  padding-left: 0%;
+}

@@ -1,0 +1,48 @@
+.navbar {
+  background-color: rgb(27, 63, 105);
+  width: 100%;
+}
+
+.navbar ul {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.navbar li {
+  display: inline-block;
+}
+
+.block {
+  margin-right: 2em;
+}
+
+.navList {
+  display: inline-block;
+}
+
+.listItem {
+  color: white;
+}
+
+.dropDown {
+  width: 300px;
+}
+
+.navInput {
+  text-align: center;
+}
+
+.navButton,
+.navInput {
+  display: inline-block;
+  align-items: flex-start;
+  margin: 0.3em;
+  font: 400 11px system-ui;
+  padding: 6px 8px 7px;
+  border-width: 1px;
+  border-radius: 7%;
+}

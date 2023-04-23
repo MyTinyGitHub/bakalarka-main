@@ -1,0 +1,29 @@
+{
+    "tutorial": [
+        {
+            "title": "Create Wall",
+            "image": "gif-how-to-create-wall",
+            "description": "To create a wall left click on empty box"
+        },
+        {
+            "title": "Run Algorithm",
+            "image": "gif-how-to-create-wall",
+            "description": "To create a wall left click on empty box"
+        }, 
+        {
+            "title": "Generate Maze",
+            "image": "gif-how-to-create-wall",
+            "description": "To create a wall left click on empty box"
+        }, 
+        {
+            "title": "Update Node Weight",
+            "image": "gif-how-to-create-wall",
+            "description": "To create a wall left click on empty box"
+        }, 
+        {
+            "title": "Debugger",
+            "image": "gif-how-to-create-wall",
+            "description": "To create a wall left click on empty box"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "en-locale": {
+    "type": "enUS",
+
+    "welcome": "First select your algorithm",
+    "Select Algorithm...": "Select your algorithm",
+    "Breadth First Search": "BFS (Breadth-First Search) is a graph traversal algorithm that visits all the nodes of a graph level by level, exploring all the neighbors of a node before moving on to the next level.",
+    "Depth First Search": "DFS (Depth-First Search) is a graph traversal algorithm that explores as far as possible along each branch before backtracking.",
+    "Dijkstra": "Dijkstra's algorithm is a greedy algorithm that finds the shortest path between nodes in a graph by iteratively selecting the node with the smallest distance from the source node and relaxing its adjacent nodes.",
+    "Astar": "A* is a pathfinding algorithm that finds the shortest path between two points by combining information about the distance from the starting point and estimated distance to the goal.",
+
+    "searching": "The algorithm is currently searching for the goal",
+    "building-path": "The algorithm found the goal, now it's building path back to origin",
+    "no-valid-path": "Currently there is no valid path in the maze, please rebuild your maze",
+    "finished": "Algorithm is finished",
+
+    "run-algorithm": "Run Algorithm",
+    "create-maze": "Create Maze",
+    "prev-step": "Do Prev-Step",
+    "next-step": "Do Next-Step",
+
+    "select-maze": "Select Maze...",
+    "select-weight": "Wall",
+    "select-algo": "Select Algorithm...",
+
+    "dijkstra": "Dijkstra",
+    "astar": "Astar",
+    "bfs": "Breadth First Search",
+    "dfs": "Depth First Search",
+
+    "tree-maze": "Tree Maze",
+    "side-winder-maze": "Side Winder"
+  }
+}

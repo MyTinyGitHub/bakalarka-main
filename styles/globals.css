@@ -1,0 +1,157 @@
+:root {
+  --grid-size: 16;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8dddd;
+}
+
+
+.node,
+.node-start,
+.node-finish,
+.node-wall {
+  width: 34px;
+  height: 32px;
+  border-style: solid;
+  border-width: 0.12rem;
+}
+
+.node :hover { 
+  cursor: default;
+}
+.node {
+  border-color: rgb(53, 152, 170);
+}
+
+.weight2 {
+  background-image: url("../public/images/number-2.png");
+  background-size: cover;
+}
+
+.weight3 {
+  background-image: url("../public/images/number-3.png");
+  background-size: cover;
+}
+
+.weight4 {
+  background-image: url("../public/images/number-4.png");
+  background-size: cover;
+}
+
+.weight5 {
+  background-image: url("../public/images/number-5.png");
+  background-size: cover;
+}
+.weight6 {
+  background-image: url("../public/images/number-6.png");
+  background-size: cover;
+}
+
+.weight7 {
+  background-image: url("../public/images/number-7.png");
+  background-size: cover;
+}
+
+.weight8 {
+  background-image: url("../public/images/number-8.png");
+  background-size: cover;
+}
+
+.weight9 {
+  background-image: url("../public/images/number-9.png");
+  background-size: cover;
+}
+
+.node-wall {
+  animation-name: fillInWall;
+  animation-duration: 1.75s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+
+  background-color: rgb(27, 63, 105);
+  border-color: rgb(44, 76, 112);
+}
+
+.node-finish {
+  background-image: url("../public/images/end.png");
+  background-size: cover;
+}
+
+.node-algo {
+  animation-name: fillInAlgo;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+
+  background-color: rgb(8, 233, 233);
+  border-color: rgb(2, 124, 124);
+}
+
+.node-result {
+  animation-name: fillInResult;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+
+  background-color: rgb(229, 233, 8);
+  border-color: rgb(205, 208, 8);
+}
+
+.node-start {
+  background-image: url("../public/images/play-button.png");
+  background-size: cover;
+}
+
+@keyframes fillInWall {
+  from {
+    background-color: #d8dddd;
+  }
+
+  to {
+    background-color: rgb(27, 63, 105);
+  }
+}
+
+@keyframes fillInAlgo {
+  from {
+    background-color: rgb(222, 8, 233);
+  }
+
+  to {
+    background-color: rgb(8, 233, 233);
+  }
+}
+
+@keyframes fillInResult {
+  from {
+    background-color: rgb(106, 127, 1);
+  }
+
+  to {
+    background-color: rgb(229, 233, 8);
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
