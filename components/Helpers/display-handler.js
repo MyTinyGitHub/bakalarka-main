@@ -3,6 +3,8 @@ import { nodes, number_of_cols, number_of_rows } from "../Grid/grid";
 import ControlState from "../Controller/ControlState";
 import Instances from "../Instances/Instances";
 import BreadthFirstSearch from "../Algorithms/PathFinding/BreadthFirstSearch";
+import ModalDialog from "../Instances/ModalDialog";
+import MouseMode from "../Controller/MouseMode";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -19,10 +21,6 @@ export class DisplayHandler {
     const result = Instances.getAlgorithm().getAlgorithm().execute();
     const array = result["visited"];
     const path = result["prev"];
-
-    if (path.length === 0) {
-      return;
-    }
 
     ControlState.getInstance().setOperational(true);
 
@@ -44,6 +42,10 @@ export class DisplayHandler {
     sleep(array.length * tick + path.length * tick).then(() => {
       ControlState.getInstance().setOperational(false);
     });
+
+    if(!path == null || path.length === 0) {
+      ModalDialog.getInstance().get().display("There is no possible path from start to finish.")
+    }
   }
 
   static addToAlgorithm(array, path, position) {
@@ -160,13 +162,16 @@ export class DisplayHandler {
     const array = result["visited"];
     const path = result["prev"];
 
-    if (path.length === 0) {
-      return;
-    }
-
     let finish = Instances.getFinish().getIndex();
 
-    path.push(finish);
+
+    if(( !path || path.length === 0)) {
+      if(MouseMode.getInstance().isEqual(""))
+        ModalDialog.getInstance().get().display("There is no possible path from start to finish.")
+    } else {
+      path.push(finish);  
+    }
+
     array.forEach((node) => {
       if (document.getElementById(node) != null)
         document.getElementById(node).classList.add("node-algo");
@@ -176,6 +181,8 @@ export class DisplayHandler {
       if (document.getElementById(node) != null)
         document.getElementById(node).classList.add("node-result");
     });
+
+    
   }
 
   static create_maze() {

@@ -15,6 +15,7 @@ export default class MouseMode {
   isEqual(mode) {
     return this.mouseMode === mode;
   }
+  
   static getInstance() {
     if (!instance) {
       instance = new MouseMode();

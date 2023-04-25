@@ -34,18 +34,21 @@ function getPath(prev, start, finish) {
     return [];
   }
 
+  console.log("Start " + start);
+
   while (node !== start) {
     DebuggerInformation.getInstance().add({ action: "Building Path",
                                               id: node,
                                               prev: prev[node]})
+  
     path.push(node);
     node = prev[node];
   }
 
   DebuggerInformation.getInstance().add({ action: "Algorithm Finish",
                                               id: start})
-
   path.push(start);
+  
   return path;
 }
 

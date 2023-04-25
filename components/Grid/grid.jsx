@@ -47,7 +47,7 @@ export default class GridClass extends Component {
   }
 
   mouse_up(e) {
-    MouseMode.getInstance().setMode("");
+    MouseMode.getInstance().setMode("")
   }
 
   mouse_leave(e) {

@@ -18,11 +18,13 @@ export default function Home() {
       <DebugProvider>
         <UINavbar/>
         <CurrentOperation />
+
         <div style={STYLE}>
           <StepByStepDisplayer/>
           <Grid />
         </div>
 
+        <ModalContainer />
         <Footer/>
       </DebugProvider>
     </div>

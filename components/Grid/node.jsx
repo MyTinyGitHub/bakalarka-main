@@ -144,6 +144,7 @@ export default class Node extends Component {
           this.setWallOrWeight();
         }
       } else {
+        MouseMode.getInstance().setMode("")
         value.setSteps(DebuggerInformation.getInstance().get());
         DisplayHandler.instant();
         StepPosition.getInstance().clear();
