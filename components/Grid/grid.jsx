@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Node from "./node";
-import classes from "./Grid.module.css";
+import classes from "./grid.module.css";
 
 import MouseMode from "../Controller/MouseMode";
 import Instances from "../Instances/Instances";

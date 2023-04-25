@@ -1,9 +1,9 @@
 import SideWinder from "../Algorithms/LabBuilding/SideWinder";
 import { TreeMaze } from "../Algorithms/LabBuilding/TreeMaze";
-import { Astar } from "../Algorithms/Pathfinding/Astar";
-import { BreadthFirstSearch } from "../Algorithms/PathFinding/BreadthFirstSearch";
-import { DepthFirstSearch } from "../Algorithms/PathFinding/DepthFirstSearch";
-import { Dijkstra } from "../Algorithms/PathFinding/Dijkstra";
+import Astar from "../Algorithms/Pathfinding/Astar";
+import BreadthFirstSearch from "../Algorithms/PathFinding/BreadthFirstSearch";
+import DepthFirstSearch from "../Algorithms/PathFinding/DepthFirstSearch";
+import Dijkstra from "../Algorithms/PathFinding/Dijkstra";
 
 import Instances from "../Instances/Instances";
 

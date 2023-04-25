@@ -63,6 +63,7 @@ const OpennedStep = ({info}) => {
         {info.prev && printPrevious()}
     </div>
 }
+
 export default function Step({ info, open, click, index }) {
     
     return <div onClick={() => click(open ? -1 : index)} style={STEP_STYLE}>

@@ -1,7 +1,7 @@
 import { getNeigbours, buildResult } from "../HelperFunctions";
 import Instances from "../../Instances/Instances";
 
-export class DepthFirstSearch {
+export default class DepthFirstSearch {
   execute() {
   const toVisit = [];
   const visited = [];

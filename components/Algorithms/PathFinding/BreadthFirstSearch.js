@@ -2,7 +2,7 @@ import DebuggerInformation from "../../Instances/DebuggerInformation";
 import Instances from "../../Instances/Instances";
 import { getNeigbours, buildResult } from "../HelperFunctions";
 
-export class BreadthFirstSearch {
+export default class BreadthFirstSearch {
   execute() {
     const start = Instances.getStart().getIndex();
     const finish = Instances.getFinish().getIndex();

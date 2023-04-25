@@ -3,7 +3,7 @@ import Instances from "../../Instances/Instances";
 import WeightController from "../../Controller/WeightController";
 import DebuggerInformation from "../../Instances/DebuggerInformation";
 
-export class Dijkstra {
+export default class Dijkstra {
   constructor() {
     this.visited = [];
     this.toVisit = [];

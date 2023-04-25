@@ -1,6 +1,5 @@
 import { number_of_cols, number_of_rows } from "../Grid/grid";
 import { walls } from "../Grid/grid";
-import { start_col, start_row, finish_col, finish_row } from "../Grid/grid";
 import DebuggerInformation from "../Instances/DebuggerInformation";
 
 export function getNeigbours(indx) {
@@ -48,7 +47,7 @@ function getPath(prev, start, finish) {
   DebuggerInformation.getInstance().add({ action: "Algorithm Finish",
                                               id: start})
   path.push(start);
-  
+
   return path;
 }
 

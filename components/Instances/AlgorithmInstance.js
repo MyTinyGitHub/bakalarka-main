@@ -1,4 +1,4 @@
-import { AlgorithmHandler } from "../Helpers/algorithm-handler";
+import AlgorithmHandler from "../Helpers/algorithm-handler";
 
 let instance = null;
 
