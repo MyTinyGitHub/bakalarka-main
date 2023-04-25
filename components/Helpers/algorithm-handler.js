@@ -1,6 +1,6 @@
 import SideWinder from "../Algorithms/LabBuilding/SideWinder";
 import { TreeMaze } from "../Algorithms/LabBuilding/TreeMaze";
-// import Astar from "../Algorithms/Pathfinding/Astar";
+import Astar from "../Algorithms/PathFinding/Astar";
 import BreadthFirstSearch from "../Algorithms/PathFinding/BreadthFirstSearch";
 import DepthFirstSearch from "../Algorithms/PathFinding/DepthFirstSearch";
 import Dijkstra from "../Algorithms/PathFinding/Dijkstra";
@@ -12,9 +12,9 @@ export default class AlgorithmHandler {
 
   static calculateAlgorithm(which) {
     switch (which) {
-      // case Instances.getLanguageText().getText("astar"):
-      //   Instances.getAlgorithm().setAlgorithm(new Astar());
-      //   break;
+      case Instances.getLanguageText().getText("astar"):
+        Instances.getAlgorithm().setAlgorithm(new Astar());
+        break;
 
       case Instances.getLanguageText().getText("dijkstra"):
         Instances.getAlgorithm().setAlgorithm(new Dijkstra());
