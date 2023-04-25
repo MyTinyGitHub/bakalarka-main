@@ -29,7 +29,7 @@ const weights = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 export const UINavbar = (props) => {
   const [category, setCategory] = useState("");
   const [mazeBuild, setMazeBuild] = useState("");
-  const { setSteps } = useContext(DebugContext);
+  
 
   const [weight, setWeight] = useState(
     Instances.getLanguageText().getText("select-weight")
@@ -37,6 +37,8 @@ export const UINavbar = (props) => {
   
   const changeCategory = useMemo(() => {
     if (category === Instances.getLanguageText().getText("select-algo")) {
+      const { setSteps } = useContext(DebugContext);
+
       DisplayHandler.clearAlgorithm();
       DebuggerInformation.getInstance().clear();
       Instances.getAlgorithm().setAlgorithm(null);
@@ -61,6 +63,7 @@ export const UINavbar = (props) => {
 
   const runAlgorithm = () => {
     if (ControlState.getInstance().isOperational()) return;
+    const { setSteps } = useContext(DebugContext);
 
     AlgorithmHandler.calculateAlgorithm(category);
     DisplayHandler.displayAlgorithm();
@@ -82,12 +85,11 @@ export const UINavbar = (props) => {
   }
 
   const clearAlgorithm = () => {
+    const { setSteps } = useContext(DebugContext);
     DisplayHandler.clearAlgorithm();
     DebuggerInformation.getInstance().clear();
-    // Instances.getAlgorithm().setAlgorithm(null)
     StepPosition.getInstance().clear();
     setSteps([]);
-    // setCategory(Instances.getLanguageText().getText("select-algo"))
   }
 
   return (
