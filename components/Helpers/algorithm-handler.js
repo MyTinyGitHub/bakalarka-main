@@ -7,7 +7,7 @@ import { Dijkstra } from "../Algorithms/PathFinding/Dijkstra";
 
 import Instances from "../Instances/Instances";
 
-export class AlgorithmHandler {
+export default class AlgorithmHandler {
   constructor() {}
 
   static calculateAlgorithm(which) {

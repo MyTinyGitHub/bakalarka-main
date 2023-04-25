@@ -1,4 +1,4 @@
-import { StepByStepController } from "./StepByStepController";
+import StepByStepController from "./StepByStepController";
 import { useContext, useState } from "react";
 import { DebugContext } from "./StepByStepContext";
 import Step from "./Step";

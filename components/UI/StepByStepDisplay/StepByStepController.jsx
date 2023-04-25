@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { DisplayHandler } from "../../Helpers/display-handler";
+import DisplayHandler from "../../Helpers/display-handler";
 import ControlState from "../../Controller/ControlState";
 import StepPosition from "../../Instances/StepPosition";
 import { DebugContext } from "./StepByStepContext";
@@ -26,7 +26,7 @@ const H2_STYLE = {
     color: "white"  
 }
 
-export const StepByStepController = () => {
+export default function StepByStepController() {
     const [values, setValues] = useState(1);
     const { steps, setSteps } = useContext(DebugContext);
 

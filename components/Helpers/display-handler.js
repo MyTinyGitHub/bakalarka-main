@@ -8,7 +8,7 @@ import MouseMode from "../Controller/MouseMode";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-export class DisplayHandler {
+export default class DisplayHandler {
   constructor() {}
 
   static displayAlgorithm() {

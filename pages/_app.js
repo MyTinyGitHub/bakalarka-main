@@ -1,8 +1,7 @@
 import "../styles/Home.module.css";
 import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
+export default function Bakalarka({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
 
-export default MyApp;

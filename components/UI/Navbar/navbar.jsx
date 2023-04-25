@@ -2,7 +2,7 @@ import { DatePickerPropsContext } from "@progress/kendo-react-dateinputs";
 import Grid from "../Grid/grid";
 import { UINavbar } from "./drop-down-menu";
 
-export default (props) => {
+export default function Navbar(props) {
   return (
     <div>
       <UINavbar

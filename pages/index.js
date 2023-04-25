@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Grid from "../components/Grid/grid";
 import ModalContainer from "../components/UI/Modal/ModalContainer";
-import { UINavbar } from "../components/UI/Navbar/drop-down-menu";
+import UINavbar from "../components/UI/Navbar/drop-down-menu";
 import CurrentOperation from "../components/UI/CurrentOperation/current-operation";
 import StepByStepDisplayer from "../components/UI/StepByStepDisplay/StepByStepDisplayer";
 import Footer from "../components/UI/Footer/Footer";
@@ -24,7 +24,7 @@ export default function Home() {
           <Grid />
         </div>
 
-        <ModalContainer />
+      <ModalContainer />
         <Footer/>
       </DebugProvider>
     </div>

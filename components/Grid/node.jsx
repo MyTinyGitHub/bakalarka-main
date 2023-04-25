@@ -2,7 +2,7 @@ import React, { Component, useContext, useState } from "react";
 import ControlState from "../Controller/ControlState";
 import MouseMode from "../Controller/MouseMode";
 import WeightController from "../Controller/WeightController";
-import { DisplayHandler } from "../Helpers/display-handler";
+import DisplayHandler from "../Helpers/display-handler";
 import Instances from "../Instances/Instances";
 import { nodes, walls } from "./grid";
 import { DebugContext } from "../UI/StepByStepDisplay/StepByStepContext";

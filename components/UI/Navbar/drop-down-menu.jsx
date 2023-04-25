@@ -2,8 +2,8 @@ import React, { useState, useMemo, useContext } from "react";
 import { DropDownList } from "@progress/kendo-react-dropdowns";
 import classes from "./drop-down-menu.module.css";
 import "@progress/kendo-theme-default/dist/all.css";
-import { DisplayHandler } from "../../Helpers/display-handler";
-import { AlgorithmHandler } from "../../Helpers/algorithm-handler";
+import DisplayHandler from "../../Helpers/display-handler";
+import AlgorithmHandler from "../../Helpers/algorithm-handler";
 import ControlState from "../../Controller/ControlState";
 import Instances from "../../Instances/Instances";
 import WeightController from "../../Controller/WeightController";
@@ -26,7 +26,7 @@ const maze_builds = [
 
 const weights = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-export const UINavbar = (props) => {
+export default function UINavbar(props) {
   const [category, setCategory] = useState("");
   const [mazeBuild, setMazeBuild] = useState("");
   const { setSteps } = useContext(DebugContext);
