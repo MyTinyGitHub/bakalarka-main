@@ -2,7 +2,6 @@ import { nodes, number_of_cols, number_of_rows } from "../Grid/grid";
 
 import ControlState from "../Controller/ControlState";
 import Instances from "../Instances/Instances";
-import BreadthFirstSearch from "../Algorithms/PathFinding/BreadthFirstSearch";
 import ModalDialog from "../Instances/ModalDialog";
 import MouseMode from "../Controller/MouseMode";
 
