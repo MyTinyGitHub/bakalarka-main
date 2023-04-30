@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Online Hosting
+Bakalárska práca je dostupná aj na webhostingu od vercel, url adresa: https://bakalarka-main.vercel.app
+
 ## Getting Started
 
 First, run the development server:
